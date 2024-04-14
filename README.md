@@ -16,15 +16,26 @@ To write a program to find the square root of a number.
 
 ## Program:
 ```
-/*
-Program to find the square root for the given number(newton's method) using function.
-Developed by: 
-RegisterNumber:  
-*/
+#To find the square root for the given number using function.
+#Developed By: LAVANYA S
+#Register No: 212223230112
+def newton_square_root(b):
+    if b<0:
+        print("The Square root is not defined for negative number")
+    x=b/2.0
+    while True:
+        new_x=0.5*(x+b/x)
+        if new_x==x:
+            break
+        x=new_x
+    return x
+b=int(input())
+result = newton_square_root(b)
+print(f"Square root of the number: {result}")
 ```
 
 ## Output:
-
+![alt text](image.png)
 
 
 ## Result:
